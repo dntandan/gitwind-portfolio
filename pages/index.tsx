@@ -51,7 +51,7 @@ export default function Index() {
   return (
     <>
       <Head>
-        <title>Home :: dntandan</title>
+        <title>Home :: GitWind</title>
       </Head>
       <Layout border="border-2">
         <About />
