@@ -8,7 +8,7 @@ export default function BlogDetails() {
         <title>Blog Details :: GitWind</title>
       </Head>
       <Layout border="border-2">
-        <div className="items-center px-2 lg:px-6 prose lg:prose-lg mx-auto py-4">
+        <div className="items-center px-2 lg:px-6 prose lg:prose-lg mx-auto py-4 dark:prose-dark">
           <h1>Awesome Blog Title</h1>
           <h3>Blog Sub Title</h3>
           <summary>

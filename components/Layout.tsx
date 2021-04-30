@@ -6,7 +6,7 @@ import Aside from '@/components/Aside';
 
 const Layout = (props) => (
   <>
-    <div className="">
+    <div className="bg-white text-black dark:bg-gray-900">
       <Header />
       <div className="lg:px-12 xl:px-48 flex flex-col lg:flex-row">
         <Aside />

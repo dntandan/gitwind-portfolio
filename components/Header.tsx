@@ -22,6 +22,7 @@ import {
   IoPaperPlane,
   IoCode,
 } from 'react-icons/io5';
+import DarkToggle from './DarkToggle';
 
 export default function Header() {
   const router = useRouter();
@@ -43,16 +44,10 @@ export default function Header() {
     <>
       {/* Mobile Nav Starts */}
       <div
-        className="block sticky top-0 lg:hidden h-auto bg-gray-900"
+        className="block sticky top-0 lg:hidden h-auto bg-gray-900 dark:bg-black"
         id="header"
       >
-        <div className="flex justify-between px-4  py-2 text-white">
-          <Link href="/">
-            <div className="flex gap-2 items-center">
-              <IoCode className="text-2xl" />
-              <h3 className="text-lg font-bold">johndoe</h3>
-            </div>
-          </Link>
+        <div className="flex justify-between px-4  py-2 text-white dark:text-white">
           <Menu as="div" className="relative inline-block text-left pt-1">
             {({ open }) => (
               <>
@@ -73,7 +68,7 @@ export default function Header() {
                 >
                   <Menu.Items
                     static
-                    className="absolute right-0 w-60 origin-top-right bg-white rounded-md shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none"
+                    className="absolute left-2 w-60 origin-top-right bg-white dark:bg-black dark:shadow-xl rounded-md shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none"
                   >
                     <div className="px-1 py-1 ">
                       <Menu.Item>
@@ -153,13 +148,25 @@ export default function Header() {
               </>
             )}
           </Menu>
+          <Link href="/">
+            <div className="flex gap-2 items-center">
+              <IoCode className="text-2xl" />
+              <h3 className="text-lg font-bold">johndoe</h3>
+            </div>
+          </Link>
+          <div className="pt-2">
+            <DarkToggle classE="text-white" />
+          </div>
         </div>
       </div>
       {/* Mobile Nav Ends */}
 
       {/* Large Screen Nav Starts */}
-      <div className="hidden lg:block h-auto bg-gray-900" id="header">
-        <div className="flex flex-row justify-between px-8 py-4 text-white">
+      <div
+        className="hidden lg:block h-auto bg-gray-900 dark:bg-black"
+        id="header"
+      >
+        <div className="flex flex-row justify-between px-8 py-4 text-white dark:text-white">
           <div>
             <p>
               Made with 💙 by <Link href="https://dntandan.ml">@dntandan</Link>
@@ -171,8 +178,9 @@ export default function Header() {
               <h3 className="text-lg font-bold">johndoe</h3>
             </div>
           </Link>
+
           <div className="pt-1">
-            <div className="text-white text-xl flex gap-5">
+            <div className="text-white text-xl flex gap-5 dark:text-white">
               <Link href="https://twitter.com/">
                 <IoLogoTwitter className="hover:text-blue-300" />
               </Link>
@@ -197,7 +205,7 @@ export default function Header() {
       </div>
       {/* Subheader Starts */}
       <div
-        className="hidden lg:block sticky top-0 bg-white h-auto border-b"
+        className="hidden lg:block sticky top-0 bg-white h-auto border-b dark:bg-gray-800 dark:border-black"
         id="sub-header"
       >
         <div
@@ -291,6 +299,9 @@ export default function Header() {
               <h1 className="ml-2">Contact</h1>
             </div>
           </Link>
+          <div className="p-2 ">
+            <DarkToggle />
+          </div>
         </div>
       </div>
       {/* Large Screen Nav Ends */}
