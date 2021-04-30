@@ -14,21 +14,23 @@ A Github themed portfolio template using TailwindCSS
   <a title="MIT License" href="LICENSE">
     <img src="https://img.shields.io/github/license/gridsome/gridsome.svg?style=flat-square&label=License&colorB=6cc24a">
   </a>
+  
 </p>
 
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/dntandan/gitwind-portfolio)
 
 ## Features
 
+- Dark Theme
 - NextJS
 - TailwindCSS
 - Mobile Friendly
-- Open-Source
 
 
 ## Demo
 
-- [Demo](https://gitwind.ml)
-- [Production Demo](https://dntandan.ml)
+- [Demo Site](https://gitwind.ml) - This repository
+- [My Personal Demo](https://dntandan.ml)- Production website of my portfolio & Blog
 
 
 ## Installation
