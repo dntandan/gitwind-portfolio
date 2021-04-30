@@ -1490,6 +1490,11 @@ native-url@0.3.4:
   dependencies:
     querystring "^0.2.0"
 
+next-themes@^0.0.14:
+  version "0.0.14"
+  resolved "https://registry.yarnpkg.com/next-themes/-/next-themes-0.0.14.tgz#2b9861990bc453149e23d8e6ef1a25a119e36675"
+  integrity sha512-x09OaM+wg3SIlEjOv8B21aw/E36jxTtfW3Dm/DPwMsSMluGt7twe1LigA6nc+mXP1u0qu9MxBaIrPPH6UTiKnA==
+
 next@10.1.3:
   version "10.1.3"
   resolved "https://registry.yarnpkg.com/next/-/next-10.1.3.tgz#e26e8371343a42bc2ba9be5cb253a7d324d03673"
@@ -1545,6 +1550,13 @@ next@10.1.3:
     util "0.12.3"
     vm-browserify "1.1.2"
     watchpack "2.1.1"
+
+nightwind@^1.1.11:
+  version "1.1.11"
+  resolved "https://registry.yarnpkg.com/nightwind/-/nightwind-1.1.11.tgz#5c12521154cc6ff0b14f48cb46c9dd8457dde74d"
+  integrity sha512-otPDpr0u8uYEVUx+oMwriDFurTU4OwxMVf4b2Z26PkalV837qpDM7ym4LnwKLM4zROiH5B5+wubK93PyxxYF7A==
+  dependencies:
+    tailwindcss "^2.0.0"
 
 node-emoji@^1.8.1:
   version "1.10.0"
@@ -2296,7 +2308,7 @@ supports-color@^8.0.0:
   dependencies:
     has-flag "^4.0.0"
 
-tailwindcss@^2.1.2:
+tailwindcss@^2.0.0, tailwindcss@^2.1.2:
   version "2.1.2"
   resolved "https://registry.yarnpkg.com/tailwindcss/-/tailwindcss-2.1.2.tgz#29402bf73a445faedd03df6d3b177e7b52b7c4a1"
   integrity sha512-T5t+wwd+/hsOyRw2HJuFuv0LTUm3MUdHm2DJ94GPVgzqwPPFa9XxX0KlwLWupUuiOUj6uiKURCzYPHFcuPch/w==
